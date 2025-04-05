@@ -1,51 +1,49 @@
-//#define _CRT_SECURE_NO_WARNINGS*///ºöÊÓÕâ¸ö¾¯¸æ
-//#include<stdio.h>//µ÷ÓÃº¯Êý£º1.¿âº¯Êý-cÓïÑÔ±¾ÉíÌá¹©¸øÎÒÃÇµÄº¯Êý£¬Ê¹ÓÃÊ±ÐèÒªµ÷ÓÃ£¨//include<stdio.h>£©¡£stdio.hÊÇstandard input outputµÄËõÐ´£¬±íÊ¾ÊäÈëºÍÊä³öº¯Êý¡£
+#define _CRT_SECURE_NO_WARNINGS*///å¿½è§†è¿™ä¸ªè­¦å‘Š
+#include<stdio.h>//è°ƒç”¨å‡½æ•°ï¼š1.åº“å‡½æ•°-cè¯­è¨€æœ¬èº«æä¾›ç»™æˆ‘ä»¬çš„å‡½æ•°ï¼Œä½¿ç”¨æ—¶éœ€è¦è°ƒç”¨ï¼ˆ//include<stdio.h>ï¼‰ã€‚stdio.hæ˜¯standard input outputçš„ç¼©å†™ï¼Œè¡¨ç¤ºè¾“å…¥å’Œè¾“å‡ºå‡½æ•°ã€‚
+
+int main()//ä¸»å‡½æ•°â€”â€”æ˜¯ç¨‹åºçš„å…¥å£ï¼Œæ•´ä¸ªä»£ç ä»Žè¿™é‡Œå¼€å§‹æ‰§è¡Œã€‚ï¼ˆæ•´ä¸ªä»£ç ä¸èƒ½æ²¡æœ‰mainå‡½æ•°ï¼Œä¹Ÿä¸èƒ½æœ‰å¤šä¸ªmainå‡½æ•°ï¼‰ã€‚
+{
+	//åœ¨è¿™é‡Œå®Œæˆä»»åŠ¡-æ–°æ‰‹æ‘
+	printf("fuck you!\nbitch\n");
+	char chi = 'A';//æ„æ€æ˜¯å‘å†…å­˜ç”³è¯·ä¸€ä¸ªå­—ç¬¦ç±»åž‹çš„ç©ºé—´å‘½åä¸ºchiï¼Œchiçš„å€¼æ˜¯Aã€‚ä½†æ˜¯charå¥½åƒåªèƒ½å†™ä¸€ä¸ªå­—èŠ‚çš„å¤§å°ã€‚
+	printf("%c\n", chi);//"%c"è¡¨ç¤ºæ‰€æœ‰å­—ç¬¦ç±»åž‹çš„æ•°æ®ï¼Œä¹Ÿå°±æ˜¯è¯´è¿™é‡Œä»¥å­—ç¬¦çš„å½¢å¼æ‰“å°chiæ•°æ®ã€‚
+	int weight = 45;
+	printf("%d\n", weight);//"%d"è¡¨ç¤ºåè¿›åˆ¶æ•°æ®ã€‚
+	float high = 158.2f;
+	printf("%f\n", high);
+	double pi = 3.14;
+	printf("%lf\n", pi);
+	printf("%d\n", sizeof(char));
+	printf("%d\n", sizeof(int));
+	printf("%d\n", sizeof(short));
+	printf("%d\n", sizeof(long));
+	printf("%d\n", sizeof(long long));
+	printf("%d\n", sizeof(float));
+	printf("%d\n", sizeof(double));//sizeof()æŠ¥å‘Šå¤§å°ã€‚
+
+//è®¡ç®—ä¸¤ä¸ªæ•°çš„å’Œ
+	int num1 = 0;
+	int num2 = 0;
+	int sum = 0;//æ‰€æœ‰å˜é‡çš„å®šä¹‰éƒ½è¦åœ¨å½“å‰ä»£ç å—çš„æœ€å‰é¢ã€‚
+	scanf("%d%d", &num1, &num2);//scanf()æ˜¯è¾“å…¥å‡½æ•°ï¼›&æ˜¯å–åœ°å€ç¬¦å·ã€‚
+	sum = num1 + num2;
+	printf("å’Œ=%d\n", sum);
+  
+	return 0;
+}
+
+//æ•°æ®ç±»åž‹			å«ä¹‰				  ç¬¦å·	å¤§å°
+// 
+//1.char        å­—ç¬¦ç±»åž‹		  %c		1
+//2.short			  çŸ­æ•´åž‹			  %d		2
+//3.int				  æ•´åž‹				  %d		4
+//4.long			  é•¿æ•´åž‹			  %d		4/8ï¼ˆ>=4ï¼‰
+//5.long long		æ›´é•¿çš„æ•´åž‹	  %d		8
+//6.float			  å•ç²¾åº¦æµ®ç‚¹æ•°  %f		4
+//7.double			åŒç²¾åº¦æµ®ç‚¹æ•°  %lf		8
 //
-//int main()//Ö÷º¯Êý¡ª¡ªÊÇ³ÌÐòµÄÈë¿Ú£¬Õû¸ö´úÂë´ÓÕâÀï¿ªÊ¼Ö´ÐÐ¡££¨Õû¸ö´úÂë²»ÄÜÃ»ÓÐmainº¯Êý£¬Ò²²»ÄÜÓÐ¶à¸ömainº¯Êý£©¡£
-//{
-//	//ÔÚÕâÀïÍê³ÉÈÎÎñ-ÐÂÊÖ´å
-//	printf("fuck you!\nbitch\n");
-//	char chi = 'A';//ÒâË¼ÊÇÏòÄÚ´æÉêÇëÒ»¸ö×Ö·ûÀàÐÍµÄ¿Õ¼äÃüÃûÎªchi£¬chiµÄÖµÊÇA¡£µ«ÊÇcharºÃÏñÖ»ÄÜÐ´Ò»¸ö×Ö½ÚµÄ´óÐ¡¡£
-//	printf("%c\n", chi);//"%c"±íÊ¾ËùÓÐ×Ö·ûÀàÐÍµÄÊý¾Ý£¬Ò²¾ÍÊÇËµÕâÀïÒÔ×Ö·ûµÄÐÎÊ½´òÓ¡chiÊý¾Ý¡£
-//	int weight = 45;
-//	printf("%d\n", weight);//"%d"±íÊ¾Ê®½øÖÆÊý¾Ý¡£
-//	float high = 158.2f;
-//	printf("%f\n", high);
-//	double pi = 3.14;
-//	printf("%lf\n", pi);
-//	printf("%d\n", sizeof(char));
-//	printf("%d\n", sizeof(int));
-//	printf("%d\n", sizeof(short));
-//	printf("%d\n", sizeof(long));
-//	printf("%d\n", sizeof(long long));
-//	printf("%d\n", sizeof(float));
-//	printf("%d\n", sizeof(double));//sizeof()±¨¸æ´óÐ¡¡£
-//	return 0;
 //
+//å˜é‡ç±»åž‹		
+//å±€éƒ¨å˜é‡	å®šä¹‰åœ¨ä»£ç å—ï¼ˆ{}ï¼‰ä¹‹å†…çš„å˜é‡ã€‚å±€éƒ¨å˜é‡çš„ä½œç”¨åŸŸåªæœ‰å…¶æ‰€åœ¨çš„å±€éƒ¨ã€‚
+//å…¨å±€å˜é‡	å®šä¹‰åœ¨ä»£ç å—ï¼ˆ{}ï¼‰ä¹‹å¤–çš„å˜é‡ã€‚å…¨å±€å˜é‡çš„ä½œç”¨åŸŸæ˜¯æ•´ä¸ªå·¥ç¨‹ï¼ˆåˆ«çš„æºæ–‡ä»¶é‡Œä¹Ÿèƒ½ç”¨ï¼‰ã€‚
 //
-//int main()
-//{
-//	//¼ÆËãÁ½¸öÊýµÄºÍ
-//	int num1 = 0;
-//	int num2 = 0;
-//	int sum = 0;//ËùÓÐ±äÁ¿µÄ¶¨Òå¶¼ÒªÔÚµ±Ç°´úÂë¿éµÄ×îÇ°Ãæ¡£
-//	scanf("%d%d", &num1, &num2);//scanf()ÊÇÊäÈëº¯Êý£»&ÊÇÈ¡µØÖ··ûºÅ¡£
-//	sum = num1 + num2;
-//	printf("ºÍ=%d\n", sum);
-//	return 0;
-//}
-//
-////Êý¾ÝÀàÐÍ			º¬Òå				·ûºÅ	´óÐ¡
-//// 
-////1.char			×Ö·ûÀàÐÍ			%c		1
-////2.short			¶ÌÕûÐÍ				%d		2
-////3.int				ÕûÐÍ				%d		4
-////4.long			³¤ÕûÐÍ				%d		4/8£¨>=4£©
-////5.long long		¸ü³¤µÄÕûÐÍ			%d		8
-////6.float			µ¥¾«¶È¸¡µãÊý		%f		4
-////7.double			Ë«¾«¶È¸¡µãÊý		%lf		8
-////
-////
-////±äÁ¿ÀàÐÍ		¾Ö²¿±äÁ¿	¶¨ÒåÔÚ´úÂë¿é£¨{}£©Ö®ÄÚµÄ±äÁ¿¡£¾Ö²¿±äÁ¿µÄ×÷ÓÃÓòÖ»ÓÐÆäËùÔÚµÄ¾Ö²¿¡£
-////				È«¾Ö±äÁ¿	¶¨ÒåÔÚ´úÂë¿é£¨{}£©Ö®ÍâµÄ±äÁ¿¡£È«¾Ö±äÁ¿µÄ×÷ÓÃÓòÊÇÕû¸ö¹¤³Ì£¨±ðµÄÔ´ÎÄ¼þÀïÒ²ÄÜÓÃ£©¡£
-////
